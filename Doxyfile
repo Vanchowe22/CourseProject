@@ -1,0 +1,23 @@
+# Doxygen конфигурационен файл за JSON проекта
+PROJECT_NAME           = "JSON-parser"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = Bulgarian
+INPUT                  = ./
+FILE_PATTERNS          = *.h *.hpp
+RECURSIVE              = NO
+EXCLUDE                = 
+EXCLUDE_PATTERNS       = 
+GENERATE_LATEX         = NO
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_ANON_NSPACES   = YES
+HAVE_DOT               = NO
+GENERATE_TREEVIEW      = YES
+GENERATE_HTML          = YES
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = NO
+INPUT_ENCODING         = UTF-8
+HTML_OUTPUT            = html

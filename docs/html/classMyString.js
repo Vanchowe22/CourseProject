@@ -1,0 +1,25 @@
+var classMyString =
+[
+    [ "MyString", "classMyString.html#a1cb17852b83614394b59720779c5f918", null ],
+    [ "MyString", "classMyString.html#aa9420b4da62b3f11ba433ea8c2b6b0e5", null ],
+    [ "MyString", "classMyString.html#a261187457de0d93e0041845f41b0bd12", null ],
+    [ "~MyString", "classMyString.html#a7bee4fe8ad82a0b7b8f65b02054b156b", null ],
+    [ "MyString", "classMyString.html#a22e499cdb9673efcd0f86d775b3677ae", null ],
+    [ "c_str", "classMyString.html#ab0a485265b9415f81e940e4ea239b99a", null ],
+    [ "copyFrom", "classMyString.html#a7b6656d1195f791f291f7b61d1e8e7ab", null ],
+    [ "free", "classMyString.html#af2bfd38d8c8d79cbf777c232147496d1", null ],
+    [ "getCapacity", "classMyString.html#a8b0a6094995464d99e271eaed0fb423c", null ],
+    [ "getSize", "classMyString.html#adaf3116663d2d4dbf03c76129b4026f0", null ],
+    [ "operator+=", "classMyString.html#a3fe1546cf0bfd9463ba56297c4be2c60", null ],
+    [ "operator=", "classMyString.html#a53ccee069eec453de7a091b1bd2ebfa2", null ],
+    [ "operator[]", "classMyString.html#a3ef120d48ada2833b0bbcfa3ee7e8c61", null ],
+    [ "operator[]", "classMyString.html#a2075173a04e093c11da643434eb86478", null ],
+    [ "resize", "classMyString.html#a93d8982298258aa4e3eee6e5563b43c9", null ],
+    [ "split", "classMyString.html#a91e145c9c019c3cd83ca6de93746e162", null ],
+    [ "operator+", "classMyString.html#a9a2e83f26920abf437391c974db9fcf1", null ],
+    [ "operator<<", "classMyString.html#a813c0f44a2cc716ce960894d08723613", null ],
+    [ "operator>>", "classMyString.html#a04ed8b4a8c47effc3f86496701e55986", null ],
+    [ "_allocatedDataSize", "classMyString.html#a0ec3343dba2632084a079930319ce129", null ],
+    [ "_data", "classMyString.html#a4c7671c76744dbcc7fbfa069a9b683ad", null ],
+    [ "_size", "classMyString.html#ae47afb3234d7f791c6b4ab0e09979313", null ]
+];

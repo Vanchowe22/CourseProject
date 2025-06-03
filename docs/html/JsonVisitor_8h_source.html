@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="bg">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JSON-parser: JsonVisitor.h Изходен файл</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JSON-parser
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Генериран от Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Търсене');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('JsonVisitor_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Зареждане...</div>
+<div class="SRStatus" id="Searching">Търсене...</div>
+<div class="SRStatus" id="NoMatches">Не намерено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">JsonVisitor.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="JsonVisitor_8h.html">Вижте документацията за този файл.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">class </span><a class="code hl_class" href="classJsonArray.html">JsonArray</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">class </span><a class="code hl_class" href="classJsonObject.html">JsonObject</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">class </span><a class="code hl_class" href="classJsonNull.html">JsonNull</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">class </span><a class="code hl_class" href="classJsonBool.html">JsonBool</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="classJsonNumber.html">JsonNumber</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span><a class="code hl_class" href="classJsonObject.html">JsonObject</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classJsonString.html">JsonString</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classJsonVisitor.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classJsonVisitor.html">JsonVisitor</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classJsonVisitor.html#a0a560830064b86f56e9fe976c2bc370d">   17</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonVisitor.html#a0a560830064b86f56e9fe976c2bc370d">visit</a>(<span class="keyword">const</span> <a class="code hl_class" href="classJsonArray.html">JsonArray</a> &amp;arr) = 0;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classJsonVisitor.html#a6aeccef016a23e32cf63a9724bc4a7ca">   18</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonVisitor.html#a6aeccef016a23e32cf63a9724bc4a7ca">visit</a>(<span class="keyword">const</span> <a class="code hl_class" href="classJsonBool.html">JsonBool</a> &amp;arr) = 0;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classJsonVisitor.html#a0d28efe932301b196148ba601ef68128">   19</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonVisitor.html#a0d28efe932301b196148ba601ef68128">visit</a>(<span class="keyword">const</span> <a class="code hl_class" href="classJsonNull.html">JsonNull</a> &amp;arr) = 0;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classJsonVisitor.html#a7832c3161bc3ec86312068d224337a04">   20</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonVisitor.html#a7832c3161bc3ec86312068d224337a04">visit</a>(<span class="keyword">const</span> <a class="code hl_class" href="classJsonNumber.html">JsonNumber</a> &amp;arr) = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classJsonVisitor.html#ae8abb25a00cde9a3fa97eeb4626a11f6">   21</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonVisitor.html#ae8abb25a00cde9a3fa97eeb4626a11f6">visit</a>(<span class="keyword">const</span> <a class="code hl_class" href="classJsonObject.html">JsonObject</a> &amp;arr) = 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classJsonVisitor.html#aba00341161d63fe0f7c285e174eabbc0">   22</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonVisitor.html#aba00341161d63fe0f7c285e174eabbc0">visit</a>(<span class="keyword">const</span> <a class="code hl_class" href="classJsonString.html">JsonString</a> &amp;arr) = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classJsonVisitor.html#a33a837c0ba125d2457338316eee6413e">   24</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classJsonVisitor.html#a33a837c0ba125d2457338316eee6413e">~JsonVisitor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+</div>
+<div class="ttc" id="aclassJsonArray_html"><div class="ttname"><a href="classJsonArray.html">JsonArray</a></div><div class="ttdoc">Представлява JSON масив</div><div class="ttdef"><b>Definition</b> JsonArray.h:9</div></div>
+<div class="ttc" id="aclassJsonBool_html"><div class="ttname"><a href="classJsonBool.html">JsonBool</a></div><div class="ttdoc">Представлява JSON булева стойност (true/false)</div><div class="ttdef"><b>Definition</b> JsonBool.h:9</div></div>
+<div class="ttc" id="aclassJsonNull_html"><div class="ttname"><a href="classJsonNull.html">JsonNull</a></div><div class="ttdoc">Представлява JSON null.</div><div class="ttdef"><b>Definition</b> JsonNull.h:9</div></div>
+<div class="ttc" id="aclassJsonNumber_html"><div class="ttname"><a href="classJsonNumber.html">JsonNumber</a></div><div class="ttdoc">Представлява JSON число</div><div class="ttdef"><b>Definition</b> JsonNumber.h:9</div></div>
+<div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdoc">Представлява JSON обект с ключове и стойности</div><div class="ttdef"><b>Definition</b> JsonObject.h:11</div></div>
+<div class="ttc" id="aclassJsonString_html"><div class="ttname"><a href="classJsonString.html">JsonString</a></div><div class="ttdoc">Представлява JSON низ</div><div class="ttdef"><b>Definition</b> JsonString.h:10</div></div>
+<div class="ttc" id="aclassJsonVisitor_html"><div class="ttname"><a href="classJsonVisitor.html">JsonVisitor</a></div><div class="ttdoc">Интерфейс за посещение на JSON елементи (Visitor Pattern)</div><div class="ttdef"><b>Definition</b> JsonVisitor.h:15</div></div>
+<div class="ttc" id="aclassJsonVisitor_html_a0a560830064b86f56e9fe976c2bc370d"><div class="ttname"><a href="classJsonVisitor.html#a0a560830064b86f56e9fe976c2bc370d">JsonVisitor::visit</a></div><div class="ttdeci">virtual void visit(const JsonArray &amp;arr)=0</div></div>
+<div class="ttc" id="aclassJsonVisitor_html_a0d28efe932301b196148ba601ef68128"><div class="ttname"><a href="classJsonVisitor.html#a0d28efe932301b196148ba601ef68128">JsonVisitor::visit</a></div><div class="ttdeci">virtual void visit(const JsonNull &amp;arr)=0</div></div>
+<div class="ttc" id="aclassJsonVisitor_html_a33a837c0ba125d2457338316eee6413e"><div class="ttname"><a href="classJsonVisitor.html#a33a837c0ba125d2457338316eee6413e">JsonVisitor::~JsonVisitor</a></div><div class="ttdeci">virtual ~JsonVisitor()=default</div></div>
+<div class="ttc" id="aclassJsonVisitor_html_a6aeccef016a23e32cf63a9724bc4a7ca"><div class="ttname"><a href="classJsonVisitor.html#a6aeccef016a23e32cf63a9724bc4a7ca">JsonVisitor::visit</a></div><div class="ttdeci">virtual void visit(const JsonBool &amp;arr)=0</div></div>
+<div class="ttc" id="aclassJsonVisitor_html_a7832c3161bc3ec86312068d224337a04"><div class="ttname"><a href="classJsonVisitor.html#a7832c3161bc3ec86312068d224337a04">JsonVisitor::visit</a></div><div class="ttdeci">virtual void visit(const JsonNumber &amp;arr)=0</div></div>
+<div class="ttc" id="aclassJsonVisitor_html_aba00341161d63fe0f7c285e174eabbc0"><div class="ttname"><a href="classJsonVisitor.html#aba00341161d63fe0f7c285e174eabbc0">JsonVisitor::visit</a></div><div class="ttdeci">virtual void visit(const JsonString &amp;arr)=0</div></div>
+<div class="ttc" id="aclassJsonVisitor_html_ae8abb25a00cde9a3fa97eeb4626a11f6"><div class="ttname"><a href="classJsonVisitor.html#ae8abb25a00cde9a3fa97eeb4626a11f6">JsonVisitor::visit</a></div><div class="ttdeci">virtual void visit(const JsonObject &amp;arr)=0</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="JsonVisitor_8h.html">JsonVisitor.h</a></li>
+    <li class="footer">Генериран от <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

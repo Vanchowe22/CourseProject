@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="bg">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JSON-parser: JsonObject.h Изходен файл</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JSON-parser
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Генериран от Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Търсене');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('JsonObject_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Зареждане...</div>
+<div class="SRStatus" id="Searching">Търсене...</div>
+<div class="SRStatus" id="NoMatches">Не намерено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">JsonObject.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="JsonObject_8h.html">Вижте документацията за този файл.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="JsonValue_8h.html">JsonValue.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="MyString_8h.html">MyString.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="JsonVisitor_8h.html">JsonVisitor.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classJsonObject.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classJsonObject.html">JsonObject</a> : <span class="keyword">public</span> <a class="code hl_class" href="classJsonValue.html">JsonValue</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// JSON обект съхраняващ двойки ключ-стойност</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classJsonObject.html#a05b2ccf0ce0a809d968a39bc7e15f220">   13</a></span>    <a class="code hl_class" href="classMyString.html">MyString</a> *<a class="code hl_variable" href="classJsonObject.html#a05b2ccf0ce0a809d968a39bc7e15f220">key</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classJsonObject.html#a7f3e82326462cd7bdbe84c3bd08da320">   14</a></span>    <a class="code hl_class" href="classJsonValue.html">JsonValue</a> **<a class="code hl_variable" href="classJsonObject.html#a7f3e82326462cd7bdbe84c3bd08da320">value</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classJsonObject.html#a650e79e9d116993aff6736b1e3f9597b">   16</a></span>    <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="classJsonObject.html#a650e79e9d116993aff6736b1e3f9597b">capacity</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classJsonObject.html#a91b251ee61602cb8da0382716edc7bb7">   17</a></span>    <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="classJsonObject.html#a91b251ee61602cb8da0382716edc7bb7">current</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classJsonObject.html#a96e722c62f5a99704e12f8e8a327b7f2">   19</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonObject.html#a96e722c62f5a99704e12f8e8a327b7f2">resize</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classJsonObject.html#a6ddbb249012385372685cc93300da3a9">   20</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonObject.html#a6ddbb249012385372685cc93300da3a9">free</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classJsonObject.html#aa1119dcff529a1a6902bf7a2f3b3b972">   21</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonObject.html#aa1119dcff529a1a6902bf7a2f3b3b972">copyFrom</a>(<span class="keyword">const</span> <a class="code hl_class" href="classJsonObject.html">JsonObject</a> &amp;other);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classJsonObject.html#aa41d053fc27e4fcf4f1c6f55ef28f4a9">   24</a></span>    <a class="code hl_function" href="classJsonObject.html#aa41d053fc27e4fcf4f1c6f55ef28f4a9">JsonObject</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classJsonObject.html#a4273b552fb746887e25a94974cf396f8">   25</a></span>    <a class="code hl_function" href="classJsonObject.html#a4273b552fb746887e25a94974cf396f8">JsonObject</a>(<span class="keyword">const</span> <a class="code hl_class" href="classJsonObject.html">JsonObject</a> &amp;other);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classJsonObject.html#ae602ffbeeebd004a111a877a059dc02e">   26</a></span>    <a class="code hl_function" href="classJsonObject.html#ae602ffbeeebd004a111a877a059dc02e">~JsonObject</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classJsonObject.html#ae0515a8ebba9fca283f688adef99cff0">   27</a></span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> &amp;<a class="code hl_function" href="classJsonObject.html#ae0515a8ebba9fca283f688adef99cff0">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classJsonObject.html">JsonObject</a> &amp;other);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classJsonObject.html#a9c90880693d8bcf6da56abffd0e96bd0">   29</a></span>    <a class="code hl_class" href="classMyString.html">MyString</a> *<a class="code hl_function" href="classJsonObject.html#a9c90880693d8bcf6da56abffd0e96bd0">getKeys</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classJsonObject.html#aab0746f61338084dd72e5ffdd4e47991">   30</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonObject.html#aab0746f61338084dd72e5ffdd4e47991">accept</a>(<a class="code hl_class" href="classJsonVisitor.html">JsonVisitor</a> &amp;visitor) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classJsonObject.html#a1a20814980181759d5479ce304096be8">   31</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonObject.html#a1a20814980181759d5479ce304096be8">addElement</a>(<span class="keyword">const</span> <a class="code hl_class" href="classMyString.html">MyString</a> &amp;<a class="code hl_variable" href="classJsonObject.html#a05b2ccf0ce0a809d968a39bc7e15f220">key</a>, <span class="keyword">const</span> <a class="code hl_class" href="classJsonValue.html">JsonValue</a> &amp;<a class="code hl_variable" href="classJsonObject.html#a7f3e82326462cd7bdbe84c3bd08da320">value</a>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classJsonObject.html#a87e7bc60c972c685091678298b50e94c">   32</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classJsonObject.html#a87e7bc60c972c685091678298b50e94c">contains</a>(<span class="keyword">const</span> <a class="code hl_class" href="classMyString.html">MyString</a> &amp;<a class="code hl_variable" href="classJsonObject.html#a05b2ccf0ce0a809d968a39bc7e15f220">key</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classJsonObject.html#a7733de23f2357bbfe7dd5cf3ba0a699a">   33</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonObject.html#a7733de23f2357bbfe7dd5cf3ba0a699a">remove</a>(<span class="keyword">const</span> <a class="code hl_class" href="classMyString.html">MyString</a> &amp;<a class="code hl_variable" href="classJsonObject.html#a05b2ccf0ce0a809d968a39bc7e15f220">key</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classJsonObject.html#a26c15662a6c8b3fa83bf86e453fdb4c0">   34</a></span>    <a class="code hl_class" href="classJsonValue.html">JsonValue</a> *<a class="code hl_function" href="classJsonObject.html#a26c15662a6c8b3fa83bf86e453fdb4c0">get</a>(<span class="keyword">const</span> <a class="code hl_class" href="classMyString.html">MyString</a> &amp;<a class="code hl_variable" href="classJsonObject.html#a05b2ccf0ce0a809d968a39bc7e15f220">key</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classJsonObject.html#ad7c43a938c79b356ad6db6daa9184072">   35</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classJsonObject.html#ad7c43a938c79b356ad6db6daa9184072">print</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classJsonObject.html#aa8171cd0f3b5e28d5f995dd4c5b3e2f3">   36</a></span>    <a class="code hl_class" href="classJsonValue.html">JsonValue</a> *<a class="code hl_function" href="classJsonObject.html#aa8171cd0f3b5e28d5f995dd4c5b3e2f3">clone</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classJsonObject.html#a7a56d3e6e9695f38002c596fc66df211">   37</a></span>    <span class="keywordtype">unsigned</span> <a class="code hl_function" href="classJsonObject.html#a7a56d3e6e9695f38002c596fc66df211">getSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+</div>
+<div class="ttc" id="aJsonValue_8h_html"><div class="ttname"><a href="JsonValue_8h.html">JsonValue.h</a></div></div>
+<div class="ttc" id="aJsonVisitor_8h_html"><div class="ttname"><a href="JsonVisitor_8h.html">JsonVisitor.h</a></div></div>
+<div class="ttc" id="aMyString_8h_html"><div class="ttname"><a href="MyString_8h.html">MyString.h</a></div></div>
+<div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdoc">Представлява JSON обект с ключове и стойности</div><div class="ttdef"><b>Definition</b> JsonObject.h:11</div></div>
+<div class="ttc" id="aclassJsonObject_html_a05b2ccf0ce0a809d968a39bc7e15f220"><div class="ttname"><a href="classJsonObject.html#a05b2ccf0ce0a809d968a39bc7e15f220">JsonObject::key</a></div><div class="ttdeci">MyString * key</div><div class="ttdef"><b>Definition</b> JsonObject.h:13</div></div>
+<div class="ttc" id="aclassJsonObject_html_a1a20814980181759d5479ce304096be8"><div class="ttname"><a href="classJsonObject.html#a1a20814980181759d5479ce304096be8">JsonObject::addElement</a></div><div class="ttdeci">void addElement(const MyString &amp;key, const JsonValue &amp;value)</div></div>
+<div class="ttc" id="aclassJsonObject_html_a26c15662a6c8b3fa83bf86e453fdb4c0"><div class="ttname"><a href="classJsonObject.html#a26c15662a6c8b3fa83bf86e453fdb4c0">JsonObject::get</a></div><div class="ttdeci">JsonValue * get(const MyString &amp;key) const</div></div>
+<div class="ttc" id="aclassJsonObject_html_a4273b552fb746887e25a94974cf396f8"><div class="ttname"><a href="classJsonObject.html#a4273b552fb746887e25a94974cf396f8">JsonObject::JsonObject</a></div><div class="ttdeci">JsonObject(const JsonObject &amp;other)</div></div>
+<div class="ttc" id="aclassJsonObject_html_a650e79e9d116993aff6736b1e3f9597b"><div class="ttname"><a href="classJsonObject.html#a650e79e9d116993aff6736b1e3f9597b">JsonObject::capacity</a></div><div class="ttdeci">unsigned capacity</div><div class="ttdef"><b>Definition</b> JsonObject.h:16</div></div>
+<div class="ttc" id="aclassJsonObject_html_a6ddbb249012385372685cc93300da3a9"><div class="ttname"><a href="classJsonObject.html#a6ddbb249012385372685cc93300da3a9">JsonObject::free</a></div><div class="ttdeci">void free()</div></div>
+<div class="ttc" id="aclassJsonObject_html_a7733de23f2357bbfe7dd5cf3ba0a699a"><div class="ttname"><a href="classJsonObject.html#a7733de23f2357bbfe7dd5cf3ba0a699a">JsonObject::remove</a></div><div class="ttdeci">void remove(const MyString &amp;key)</div></div>
+<div class="ttc" id="aclassJsonObject_html_a7a56d3e6e9695f38002c596fc66df211"><div class="ttname"><a href="classJsonObject.html#a7a56d3e6e9695f38002c596fc66df211">JsonObject::getSize</a></div><div class="ttdeci">unsigned getSize() const</div></div>
+<div class="ttc" id="aclassJsonObject_html_a7f3e82326462cd7bdbe84c3bd08da320"><div class="ttname"><a href="classJsonObject.html#a7f3e82326462cd7bdbe84c3bd08da320">JsonObject::value</a></div><div class="ttdeci">JsonValue ** value</div><div class="ttdef"><b>Definition</b> JsonObject.h:14</div></div>
+<div class="ttc" id="aclassJsonObject_html_a87e7bc60c972c685091678298b50e94c"><div class="ttname"><a href="classJsonObject.html#a87e7bc60c972c685091678298b50e94c">JsonObject::contains</a></div><div class="ttdeci">bool contains(const MyString &amp;key) const</div></div>
+<div class="ttc" id="aclassJsonObject_html_a91b251ee61602cb8da0382716edc7bb7"><div class="ttname"><a href="classJsonObject.html#a91b251ee61602cb8da0382716edc7bb7">JsonObject::current</a></div><div class="ttdeci">unsigned current</div><div class="ttdef"><b>Definition</b> JsonObject.h:17</div></div>
+<div class="ttc" id="aclassJsonObject_html_a96e722c62f5a99704e12f8e8a327b7f2"><div class="ttname"><a href="classJsonObject.html#a96e722c62f5a99704e12f8e8a327b7f2">JsonObject::resize</a></div><div class="ttdeci">void resize()</div></div>
+<div class="ttc" id="aclassJsonObject_html_a9c90880693d8bcf6da56abffd0e96bd0"><div class="ttname"><a href="classJsonObject.html#a9c90880693d8bcf6da56abffd0e96bd0">JsonObject::getKeys</a></div><div class="ttdeci">MyString * getKeys() const</div></div>
+<div class="ttc" id="aclassJsonObject_html_aa1119dcff529a1a6902bf7a2f3b3b972"><div class="ttname"><a href="classJsonObject.html#aa1119dcff529a1a6902bf7a2f3b3b972">JsonObject::copyFrom</a></div><div class="ttdeci">void copyFrom(const JsonObject &amp;other)</div></div>
+<div class="ttc" id="aclassJsonObject_html_aa41d053fc27e4fcf4f1c6f55ef28f4a9"><div class="ttname"><a href="classJsonObject.html#aa41d053fc27e4fcf4f1c6f55ef28f4a9">JsonObject::JsonObject</a></div><div class="ttdeci">JsonObject()</div></div>
+<div class="ttc" id="aclassJsonObject_html_aa8171cd0f3b5e28d5f995dd4c5b3e2f3"><div class="ttname"><a href="classJsonObject.html#aa8171cd0f3b5e28d5f995dd4c5b3e2f3">JsonObject::clone</a></div><div class="ttdeci">JsonValue * clone() const override</div></div>
+<div class="ttc" id="aclassJsonObject_html_aab0746f61338084dd72e5ffdd4e47991"><div class="ttname"><a href="classJsonObject.html#aab0746f61338084dd72e5ffdd4e47991">JsonObject::accept</a></div><div class="ttdeci">void accept(JsonVisitor &amp;visitor) const override</div></div>
+<div class="ttc" id="aclassJsonObject_html_ad7c43a938c79b356ad6db6daa9184072"><div class="ttname"><a href="classJsonObject.html#ad7c43a938c79b356ad6db6daa9184072">JsonObject::print</a></div><div class="ttdeci">void print() const override</div></div>
+<div class="ttc" id="aclassJsonObject_html_ae0515a8ebba9fca283f688adef99cff0"><div class="ttname"><a href="classJsonObject.html#ae0515a8ebba9fca283f688adef99cff0">JsonObject::operator=</a></div><div class="ttdeci">JsonObject &amp; operator=(const JsonObject &amp;other)</div></div>
+<div class="ttc" id="aclassJsonObject_html_ae602ffbeeebd004a111a877a059dc02e"><div class="ttname"><a href="classJsonObject.html#ae602ffbeeebd004a111a877a059dc02e">JsonObject::~JsonObject</a></div><div class="ttdeci">~JsonObject()</div></div>
+<div class="ttc" id="aclassJsonValue_html"><div class="ttname"><a href="classJsonValue.html">JsonValue</a></div><div class="ttdoc">Абстрактна базова класа за всички JSON стойности</div><div class="ttdef"><b>Definition</b> JsonValue.h:10</div></div>
+<div class="ttc" id="aclassJsonVisitor_html"><div class="ttname"><a href="classJsonVisitor.html">JsonVisitor</a></div><div class="ttdoc">Интерфейс за посещение на JSON елементи (Visitor Pattern)</div><div class="ttdef"><b>Definition</b> JsonVisitor.h:15</div></div>
+<div class="ttc" id="aclassMyString_html"><div class="ttname"><a href="classMyString.html">MyString</a></div><div class="ttdoc">Клас за работа с динамични низове, подобен на std::string.</div><div class="ttdef"><b>Definition</b> MyString.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="JsonObject_8h.html">JsonObject.h</a></li>
+    <li class="footer">Генериран от <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

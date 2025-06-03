@@ -1,0 +1,27 @@
+var files_dup =
+[
+    [ "Command.h", "Command_8h.html", "Command_8h" ],
+    [ "CommandCreate.h", "CommandCreate_8h.html", "CommandCreate_8h" ],
+    [ "CommandDelete.h", "CommandDelete_8h.html", "CommandDelete_8h" ],
+    [ "CommandFactory.h", "CommandFactory_8h.html", "CommandFactory_8h" ],
+    [ "CommandMove.h", "CommandMove_8h.html", "CommandMove_8h" ],
+    [ "CommandPrint.h", "CommandPrint_8h.html", "CommandPrint_8h" ],
+    [ "CommandSave.h", "CommandSave_8h.html", "CommandSave_8h" ],
+    [ "CommandSaveAs.h", "CommandSaveAs_8h.html", "CommandSaveAs_8h" ],
+    [ "CommandSearch.h", "CommandSearch_8h.html", "CommandSearch_8h" ],
+    [ "CommandSet.h", "CommandSet_8h.html", "CommandSet_8h" ],
+    [ "CommandValidate.h", "CommandValidate_8h.html", "CommandValidate_8h" ],
+    [ "Dokumentacia.h", "Dokumentacia_8h.html", null ],
+    [ "JsonArray.h", "JsonArray_8h.html", "JsonArray_8h" ],
+    [ "JsonBool.h", "JsonBool_8h.html", "JsonBool_8h" ],
+    [ "JsonCommands.h", "JsonCommands_8h.html", "JsonCommands_8h" ],
+    [ "JsonNull.h", "JsonNull_8h.html", "JsonNull_8h" ],
+    [ "JsonNumber.h", "JsonNumber_8h.html", "JsonNumber_8h" ],
+    [ "JsonObject.h", "JsonObject_8h.html", "JsonObject_8h" ],
+    [ "JsonPrinter.h", "JsonPrinter_8h.html", "JsonPrinter_8h" ],
+    [ "JsonReader.h", "JsonReader_8h.html", "JsonReader_8h" ],
+    [ "JsonString.h", "JsonString_8h.html", "JsonString_8h" ],
+    [ "JsonValue.h", "JsonValue_8h.html", "JsonValue_8h" ],
+    [ "JsonVisitor.h", "JsonVisitor_8h.html", "JsonVisitor_8h" ],
+    [ "MyString.h", "MyString_8h.html", "MyString_8h" ]
+];
