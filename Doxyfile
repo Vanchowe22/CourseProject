@@ -20,4 +20,4 @@ GENERATE_HTML          = YES
 QUIET                  = YES
 WARN_IF_UNDOCUMENTED   = NO
 INPUT_ENCODING         = UTF-8
-HTML_OUTPUT            = html
+HTML_OUTPUT            = .
